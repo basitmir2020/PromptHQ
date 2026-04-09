@@ -29,10 +29,12 @@ Thumbs.db
 
 # Project-specific from previous version
 scripts
+apps
 
 # Secrets and environment configurations
 appsettings.Development.json
 appsettings.json
-INSTALLATION.md
+appsettings.*.json
+*.json
 *.env
 .env.*
