@@ -1,8 +1,7 @@
 ﻿# Base stage for running the application
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 10000
 
 # Build stage
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
@@ -32,4 +31,5 @@ RUN dotnet publish "PromptHQ.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+ENV ASPNETCORE_URLS=http://+:10000
 ENTRYPOINT ["dotnet", "PromptHQ.API.dll"]

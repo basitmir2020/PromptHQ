@@ -33,8 +33,15 @@ if (app.Environment.IsDevelopment())
     app.MapScalarApiReference();
     app.MapGet("/", () => Results.Redirect("/scalar/v1"));
 }
+else
+{
+    // For production/staging, you might still want Scalar/OpenApi or just the redirect
+    app.MapOpenApi();
+    app.MapScalarApiReference();
+    app.MapGet("/", () => Results.Redirect("/scalar/v1"));
+}
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection(); // Removed for Render compatibility (handled by proxy)
 app.UseAuthorization();
 app.MapControllers();
 
