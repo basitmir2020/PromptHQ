@@ -1,0 +1,6 @@
+@PromptHQ.API_HostAddress = http://localhost:5150
+
+GET {{PromptHQ.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

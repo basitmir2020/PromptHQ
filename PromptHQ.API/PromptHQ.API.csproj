@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>863781d5-979c-4210-8f3a-264e38e5b6cf</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.13.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PromptHQ.Application\PromptHQ.Application.csproj" />
+    <ProjectReference Include="..\PromptHQ.Infrastructure\PromptHQ.Infrastructure.csproj" />
+    <ProjectReference Include="..\PromptHQ.AI\PromptHQ.AI.csproj" />
+    <ProjectReference Include="..\PromptHQ.Communication\PromptHQ.Communication.csproj" />
+  </ItemGroup>
+
+</Project>

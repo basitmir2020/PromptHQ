@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="PromptHQ.AI/PromptHQ.AI.csproj" />
+  <Project Path="PromptHQ.API/PromptHQ.API.csproj" />
+  <Project Path="PromptHQ.Application/PromptHQ.Application.csproj" />
+  <Project Path="PromptHQ.Communication/PromptHQ.Communication.csproj" />
+  <Project Path="PromptHQ.Domain/PromptHQ.Domain.csproj" />
+  <Project Path="PromptHQ.Infrastructure/PromptHQ.Infrastructure.csproj" />
+</Solution>

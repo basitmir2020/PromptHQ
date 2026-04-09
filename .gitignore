@@ -1,0 +1,38 @@
+﻿# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+bin/
+obj/
+out/
+dist/
+
+# .NET and Visual Studio
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+*.dbmdl
+*.jfm
+TestResults/
+
+# Node/JS (if any)
+node_modules/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Project-specific from previous version
+scripts
+
+# Secrets and environment configurations
+appsettings.Development.json
+appsettings.json
+INSTALLATION.md
+*.env
+.env.*
